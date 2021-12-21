@@ -37,7 +37,7 @@ CORS의 동작
   
 CORS 해결법
 -------------
-1. 서버에서 Access-Control-Allow-Origin 헤어데 알맞은 값을 세팅
+1. 서버에서 Access-Control-Allow-Origin 헤어에 알맞은 값을 세팅
 2. webpack-dev-server 라이브러리가 제공하는 프록시 기능을 사용하여 CORS 정책 우회 (로컬에서만 사용가능)
 ```
 module.exports = {
@@ -51,6 +51,7 @@ module.exports = {
   },
 };
 ```
+- 프록시 서버로 인해 domain.com 서버에서는 같은 도메인에서 온 요청으로 인식하여 CORS 에러가 발생하지 않음
 3. package.json에 proxy 값을 설정
 ```
 {
