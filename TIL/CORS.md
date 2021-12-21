@@ -13,7 +13,7 @@ CORS의 동작
 - 클라이언트가 다른 출처의 리소스를 요청할 때는 HTTP 프로토콜을 사용
 - 요청 헤더의 Origin 이라는 필드에 요청을 보내는 출처를 함께 담아서 보냄
 - 이후 서버가 이 요청에 대한 응답을 할 때 응답 헤더의 Access-Control=Allow-Origin 이라는 값에 이 리소스를 접근하는 것이 허용된 출처를 내려주고, 
-  이후 응답을 받은 브라우저는 자신이 보냈던 요청의 origin과 서버가 보내준 응담의 Access-Comtrol-Allow-Origin을 비교해본 후 이 응답이 유효한 응답인지 아닌지를 결정
+  이후 응답을 받은 브라우저는 자신이 보냈던 요청의 origin과 서버가 보내준 응담의 Access-Control-Allow-Origin을 비교해본 후 이 응답이 유효한 응답인지 아닌지를 결정
 
 접근 제어 시나리오
 ---------------------
@@ -37,7 +37,7 @@ CORS의 동작
   
 CORS 해결법
 -------------
-1. 서버에서 Access-Control-Allow-Origin 헤어에 알맞은 값을 세팅
+1. 서버에서 Access-Control-Allow-Origin 헤더에 알맞은 값을 세팅
 2. webpack-dev-server 라이브러리가 제공하는 프록시 기능을 사용하여 CORS 정책 우회 (로컬에서만 사용가능)
 ```
 module.exports = {
