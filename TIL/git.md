@@ -49,3 +49,26 @@ Git으로 하는 일
 - Git 디렉토리에 있는 파일들은 Committed 상태
 - 파일을 수정하고 Staging Area에 추가했다면 Staged
 - Checkout 하고 나서 수정했지만, 아직 Staging Area에 추가하지 않았으면 Modified
+
+fork 하는 법
+-------------
+1. 원본 repositary 추가
+````
+$ git remote add upstream 주소
+````
+2. 추가 됐는지 확인
+````
+$ git remote -v
+````
+3. upstream 최신 내용 불러오기
+````
+$ git fetch upstream
+````
+4. merge
+````
+$ git merge upstream/main
+````
+5. origin으로 push
+````
+$ git push origin main
+````
