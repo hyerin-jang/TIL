@@ -18,7 +18,7 @@ Spring Security
 - Authentication을 보관하는 역할
 - SecurityContext를 통해 Authentication 객체를 꺼내올 수 있음
 
-####SecurityContextHolder
+#### SecurityContextHolder
 - SecurityContextHolder는 보안 주체의 세부 정보를 포함하여 응용 프로그램의 현재 보안 컨텍스트에 대한 세부 정보가 저장
 
 #### AuthenticationProvider
@@ -53,9 +53,9 @@ Spring Security
 - 이 Authentication 인스턴스는 SecurityContextHolder에 저장
 
 ### dependency 추가
-    ````
-    implementation 'org.springframework.boot:spring-boot-starter-security'
-    ````
+````
+implementation 'org.springframework.boot:spring-boot-starter-security'
+````
    
 ### 설정
 #### Security Config class 작성
