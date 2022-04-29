@@ -1,16 +1,13 @@
-Thymeleaf
-==========
+# Thymeleaf
 
-Thymeleaf란?
--------------
+## Thymeleaf란?
 - 템플릿 엔진: 미리 정의된 템플릿을 만들고 동적으로 HTML 페이지를 만들어 클라이언트의 전달하는 방식
 - 서버사이드 템플릿 엔진: 요청이 올 때마다 서버에서 새로운 HTML 페이지를 만들어 줌
 - thymeleaf는 서버사이드 템플릿 엔진의 한 종류
 - 스프링에서는 thymeleaf 권장
 - thymeleaf의 확장자명은 .html이며 문법은 html 태그 안쪽에 속성으로 사용
 
-Thymeleaf 페이지 레이아웃
------------------------
+## Thymeleaf 페이지 레이아웃
 1. Thymeleaf Layout Dialect dependency 추가
     - build.gradle
    ````
@@ -82,3 +79,17 @@ Thymeleaf 페이지 레이아웃
     
        </html> 
       ````
+   
+## Thymeleaf Security
+- 특정 권한만 허용
+````
+sec:authorize="hasRole('권한 명')"
+````
+- 로그인 되지 않는 경우 허용
+````
+sec:authorize="!isAuthenticated()"
+````
+- 로그인 된 경우 허용
+````
+sec:authorize="isAuthenticated()"
+````
