@@ -51,5 +51,5 @@
 - pkColumnValue: 키로 사용할 값 이름
 - initialValue:	초기 값, 마지막으로 생성된 값이 기준
 - allocationSize: 시퀀스 한 번 호출에 증가하는 수(성능 최적화에 사용됨)
-- catalog, schema: 데이터베이스 catalog, schema 이름	 
+- catalog, schema: 데이터베이스 catalog, schema 이름 
 - uniqueConstraints(DDL): 유니크 제약 조건을 지정할 수 있음
