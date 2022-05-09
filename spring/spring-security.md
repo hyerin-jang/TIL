@@ -9,6 +9,7 @@ Spring Security
   - Credential(비밀번호): Resource에 접근하는 대상의 비밀번호
 
 ### Spring Security 주요 모듈
+![](img/spring-security.png)
 #### Authentication
 - 현재 접근하는 주체의 정보와 권한을 담는 인터페이스
 - SecurityContext에 저장
@@ -136,7 +137,21 @@ implementation 'org.springframework.boot:spring-boot-starter-security'
       
 #### 권한 없는 사용자 점근 시 설정
 - .exceptionHandling().accessDeniedPage("/path"): 권한 없는 사용자가 접근 시 이동할 페이지 등록
-   
-      
+
+#### 인증 예외 시
+- AuthenticationException 호출
+- AuthenticationEntryPoint 인터페이스로 커스텀 가능
+
+#### 인가 예외 시
+- AccessDeniedException 호출
+- AccessDeniedHandler 인터페이스로 커스텀 가능
+
+````
+http
+  .exceptionHandling()
+    .authenticationEntryPoint()
+    .accessDeniedHandler()
+    ;
+````
          
 
