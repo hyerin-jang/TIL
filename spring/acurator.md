@@ -28,3 +28,6 @@ management:
         include: health,info,beans,conditions
         exclude: threaddump, heapdump
 ````
+
+## 공식문서
+<https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html>
