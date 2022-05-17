@@ -16,7 +16,7 @@
 ````
 Person person = new Person();
 ````
-![](img/instance.png)
+![](../img/instance.png)
 1. new Person(); 을 통해 Person 클래스를 바탕으로 한 인스턴스 생성
 2. Person 이라는 클래스 자료형으로 person 변수 선언. 이 변수는 지역변수이기 때문에 스택 메모리에 생성
 3. 대입연산자(=)를 통해 우측 인스턴스의 주소 값(해시코드 값)을 좌측 person 변수에 할당
