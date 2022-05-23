@@ -9,7 +9,7 @@
 - JWT는 HMAC 알고리즘을 사용하여 비밀키 또는 RSA를 이용한 Public Key/ Private Key 쌍으로 서명할 수 있음
 
 ## JWT 토큰 구성
-![](../img/jwt-token.png)
+![](img/jwt-token.png)
 - JWT는 세 파트로 나누어지며, 각 파트는 점로 구분하여 xxxxx.yyyyy.zzzzz 이런식으로 표현
 - 순서대로 헤더(Header), 페이로드(Payload), 서명(Sinature)로 구성
 - Base64 인코딩의 경우 “+”, “/”, “=”이 포함되지만 JWT는 URI에서 파라미터로 사용할 수 있도록 URL-Safe 한  Base64url 인코딩을 사용
@@ -22,7 +22,7 @@
 - Signature는 secret key를 포함하여 암호화
 
 ## JWT process
-![](../img/jwt_process.webp)
+![](img/jwt_process.webp)
 1. 사용자가 id와 password를 입력하여 로그인을 시도합
 2. 서버는 요청을 확인하고 secret key를 통해 Access token을 발급
 3. JWT 토큰을 클라이언트에 전달

@@ -9,7 +9,7 @@ Spring Security
   - Credential(비밀번호): Resource에 접근하는 대상의 비밀번호
 
 ### Spring Security 주요 모듈
-![](../img/spring-security.png)
+![](img/spring-security.png)
 #### Authentication
 - 현재 접근하는 주체의 정보와 권한을 담는 인터페이스
 - SecurityContext에 저장

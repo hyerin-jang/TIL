@@ -1,4 +1,4 @@
-# Github Action
+# Github Actions
 - CI/CD를 가능하게 해주는 툴
 - 그 외 CI/CD tool: Jenkins, AWS Code Deploy, GCP의 Code Build
 

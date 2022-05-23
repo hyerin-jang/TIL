@@ -1,9 +1,9 @@
 # Pageable
-![](../img/jpa-repository.png)
+![](img/jpa-repository.png)
 - JpaRepository의 부모 인페이스인 PagingAndSortingRepository 에서 paging과 sorting 기능 제공
 
 
-![](../img/page-request.png)
+![](img/page-request.png)
 - PageRequest 객체는 Pageable 인터페이스를 상속받음
 - sort, offset, page 정보를 넘길 수 있음
 
