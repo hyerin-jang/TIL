@@ -37,3 +37,6 @@ dispatcher-servlet이 해당 어플리케이션으로 들어오는 모든 요청
 6. 컨트롤러가 반환값을 반환함
 7. HandlerAdapter가 반환값을 처리함
 8. 서버의 응답을 클라이언트로 반환함
+
+## Web 동작과정
+![](img/web.png)
