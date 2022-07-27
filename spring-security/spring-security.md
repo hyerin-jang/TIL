@@ -131,7 +131,7 @@ implementation 'org.springframework.boot:spring-boot-starter-security'
 
 #### 로그아웃 설정
 - logout(): 로그아웃 설정 진행
-- logoutRequestMatcher(new AntPathRequestMatcher("path")): 로그아웃 겅로 지정
+- logoutRequestMatcher(new AntPathRequestMatcher("path")): 로그아웃 경로 지정
 - logoutSuccessUrl("/path"): 로그아웃 성공 시 이동할 페이지 등록
 - invalidateHttpSession(true): 로그아웃 성공 시 세션 제거
       
