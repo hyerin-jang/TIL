@@ -167,4 +167,4 @@ public class FixDiscountPolicy implements DiscountPolicy {}
 #### @Qualifier, @Primary
 - 메인 데이터베이스의 커넥션을 획득하는 스프링 빈은 @Primary를 적용해서 조회하는 곳에서 @Qualifier를 지정 없이 편리하게 조회하고,
 서브 데이터베이스 커넥션 빈을 획득할 때는 @Qualifier를 지정해서 명시적으로 획득하는 방식으로 사용하면 코드를 깔끔하게 유지할 수 있음
-- @Qualifier가 @Primary보다 우선권이 높음
+- @Qualifier가 @Primary보다 우선권이 높
